@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lag="en">
+<head>
+<title>Personal Profile</title>
+
+<script src="https://kit.fontawesome.com/3298b0c73b.js" crossorigin="anonymous"></script>
+
+
+<style type="text/css">
+*{
+margin: 0px;
+padding: 0px;
+}
+
+body{
+margin: 0px;
+padding: 0px;
+}
+#header{
+margin: 0px;
+padding: 10px 0px;
+width: 100%;
+height: 35px;
+background: none;
+border-bottom: 2px solid rgba(245, 224, 245, 0.34);
+}
+#header .Img{
+width: 68px;
+height: 34px;
+float: left;
+display: block;
+background: transparent !important;
+}
+.sticky {
+position: fixed;
+z-index: 2;
+top: 0%;
+width: 100%;
+background-color: rgb(2, 4, 12) !important;
+border: none !important;
+
+}
+.barsBefore{
+float: right;
+font-size: 17px;
+padding: 10px 5px;
+color: #ccc;
+text-decoration: none;
+right: 0%;
+background: transparent;
+text-transform: uppercase;
+outline: none;
+border: none;
+}
+.barsBefore i{
+margin: 5px;
+}
+.barsAfter {
+top: 0;
+right: 80%;
+font-size: 35px;
+float: none;
+padding: 5px;
+margin: 0px;
+color: rgb(230,25,20);
+text-decoration: none;
+background: transparent;
+outline: none;
+border: none;
+}
+
+
+.navigationBar{
+position: absolute;
+top: 0%;
+right: 0%;
+float: right;
+background: #109dff;
+display: block;
+color: #ccd;
+width: 0%;
+z-index: 1;
+transition: all 0.5s;
+}
+.navigationBar nav a{
+width: 180px;
+padding: 15px 0px;
+display: block;
+text-decoration: none;
+margin: auto;
+color: #ccc;
+border-bottom: 1px solid #ddd;
+}
+nav .last_a{
+border: none !important;
+margin-bottom: 10px !important;
+}
+nav .first_a{
+margin-top: 27px !important;
+border-top: 1px solid #ddd;;
+}
+
+.navigationBar nav a i{
+margin: 3px;
+}
+
+.headBackground{
+padding-bottom: 5px;
+text-align: center;
+background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/me1.jpeg);
+background-size: cover;
+background-position: top;
+}
+
+.introduce{
+padding: 35px 0px;
+
+}
+
+.titleHi{
+color: rgba(255, 255, 255, 0.67);
+}
+.introduceTitle{
+font-family: arial black;
+font-size: 45px;
+font-weight: bold;
+color: orange;
+}
+.titleName{
+font-size: 60px;
+color: #109DFF;
+}
+.bio{
+margin-top:5px;
+margin-bottom:0px;
+font-size: 20px;
+align-items: center;
+justify-align: center;
+text-align: center;
+color: rgba(255, 255, 255, 0.67);
+}
+
+
+
+
+#Social{
+margin-top: 25px;
+margin-bottom: 0px;
+}
+#Social a i{
+width: 18px;
+height: 18px;
+font-size:20px;
+margin: 4px;
+padding: 12px;
+border: 1px solid #109DFF;
+border-radius:50%;
+outline: none;
+background: none;
+color: #109DFF;
+transition:  0.2s;
+}
+#Social a{
+width: 18px;
+height: 18px;
+border: none;
+border-radius:50%;
+outline: none;
+background: none;
+}
+#Social a i:active{
+border: none;
+background: #109DFF;
+color: white;
+border-radius:50%;
+outline: none;
+}
+#Social a i:hover{
+border: none;
+background: #109DFF;
+color: #dee;
+}
+
+
+.aboutSection{
+padding-top: 40px;
+padding-bottom: 50px;
+text-align: center;
+font-family: arial;
+line-height:23px;
+}
+.aboutSection .aboutTitle{
+text-transform: uppercase;
+color: #109DFF;
+padding: 25px 5px;
+font-size: 30px;
+line-height: 30px;
+}
+.aboutSection .aboutDetails{
+font-family: arial;
+font-size: 16px;
+color: #999;
+padding-bottom: 10px;
+line-height: 25px;
+}
+
+
+
+
+.workSection{
+padding: 40px 0px;
+background: linear-gradient(rgba(0, 0, 0, 0.67),rgba(0, 0, 0, 0.67)),url(images/images8.jpeg);
+background-size: cover;
+background-position: center;
+}
+.workSectionTitle{
+text-transform: uppercase;
+color: white;
+padding: 30px 5px;
+font-size: 30px;
+text-align: center;
+line-height: 30px;
+}
+.boxContainer .boxLine .box{
+display: inline-block;
+}
+.boxLine{
+align-items: center;
+justify-align: center;
+text-align: center;
+margin: auto;
+}
+.box{
+width: 180px;
+height: 105px;
+padding: 7px;
+margin: 12px;
+transition: all 0.5s;
+}
+.box:hover{
+transform: translateX(7px);
+box-shadow: 1px 0px 1px #ddd;
+}
+.box:hover .workTitle{
+transform: translateX(-8px);
+}
+.box .boxIcon{
+width: 25%;
+float: left;
+font-size: 35px;
+margin: 21px 0px;
+color: #ddd;
+}
+.box .boxText{
+width: 70%;
+text-align: center;
+float: right;
+margin: 5px 0px;
+}
+.workTitle{
+color: white;
+font-size: 17px;
+padding-bottom: 3px;
+transition: all 0.5s;
+}
+.workDetails{
+color: #ddd;
+font-size:14px;
+}
+
+
+
+.skillDetails{
+padding: 35px 0px;
+border-top: 1px solid #ddd;
+background: transparent;
+position: relative;
+}
+.skillDetails .skillTitle{
+text-transform: uppercase;
+color: #109DFF;
+padding: 30px 5px;
+font-size: 30px;
+line-height: 30px;
+text-align: center;
+}
+.skillDetails span{
+padding: 5px 0px;
+text-align: left;
+margin: 0px;
+color: #788;
+font-weight: bold;
+font-size: 15px;
+
+}
+
+.skillDetails .skillBox{
+margin: 20px 25px;
+padding: 0px;
+text-transform: uppercase;
+overflow: hidden;
+background: transparent;
+}
+.progress {
+position: relative;
+background: #ccc;
+width: 80%;
+height: 7px;
+border-radius: 25px;
+display: inline-block;
+
+}
+.progressBar{
+position: absolute;
+background: #109dff;
+width: 86%;
+height: 7px;
+border-radius: 25px 0px 0px 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.forExtra{
+position: relative;
+}
+.workWith{
+background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/images5.jpeg);
+background-size: cover;
+background-position: center;
+padding-bottom: 15px;
+padding-top:20px;
+}
+.workWith .workWithTitle{
+color: #fff;
+padding: 5px;
+margin:0px 10px;
+font-size: 25px;
+}
+.workWith .workWithFind{
+color: #ddd;
+padding-left: 5px;
+margin: 0px 10px;
+font-size: 20px;
+}
+.workWith .hireButton{
+text-transform: uppercase;
+width: 90px;
+height: 40px;
+margin-top: 4px;
+margin-left: 15px;
+padding: 5px;
+color: white;
+font-size: 16px;
+font-weight: bold;
+background: #109DFF;
+border: none;
+outline: none;
+position: relative;
+transition: all 0.5s;
+}
+.hireButton:hover{
+background: transparent;
+color: #fff;
+border: 1px solid #ddd;
+}
+.hireButton:active{
+background: transparent;
+color: #fff;
+border: 1px solid #ddd;
+}
+
+.chose{
+margin: 10px 20px;
+padding: 10px 0px;
+}
+.chose:after{
+content: "";
+width: 77%;
+position: absolute;
+height: 110px;
+right: 0%;
+top: 30%;
+background: white;
+transform: skewY(-10deg);
+}
+.choseTitle{
+position: relative;
+z-index: 1;
+color: #109DFF;
+font-size: 25px;
+margin-top: 8px;
+margin-left: 7px;
+}
+.chose ul{
+padding: 20px;
+}
+.chose ul li{
+color: #999;
+position: relative;
+z-index: 1;
+line-height: 22px;
+font-size:19px;
+}
+
+
+.subscribeForm{
+background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url(images/images3.jpeg);
+background-size: cover;
+background-position: center;
+padding: 20px 0px;
+}
+.subscribeTitle{
+text-transform: uppercase;
+color: white;
+text-align: left;
+font-size: 18px;
+margin-top: 8px;
+margin-left: 8px;
+padding-bottom: 10px;
+}
+.subscribeInput{
+width: 50%;
+height: 40px;
+margin:5px;
+padding: 5px;
+color: white;
+font-size: 14px;
+background: transparent;
+border: 1px solid #ddd;
+outline: none;
+box-sizing: border-box;
+}
+.subscribeInput::placeholder {
+color: white;
+opacity: 0.7;
+}
+.subscribeInput:hover{
+background: transparent;
+border: none;
+box-shadow: 0em 0em 0.1em 0.05em #109DFF;
+}
+.subscribeButton{
+text-transform: uppercase;
+width: 90px;
+height: 40px;
+margin: 5px;
+padding: 5px;
+color: white;
+font-size: 14px;
+font-weight: bold;
+background: #109DFF;
+border: none;
+outline: none;
+transition: all 0.5s;
+box-sizing: border-box;
+}
+.subscribeButton:hover{
+background: transparent;
+color: #fff;
+border: 1px solid #ddd;
+}
+.subscribeButton:active{
+background: transparent;
+color: #fff;
+border: 1px solid #ddd;
+}
+
+
+
+.contact{
+background: #120E26;
+background-size: cover;
+background-position: center;
+padding: 35px 0px;
+}
+.contactTitle {
+text-transform: uppercase;
+color: #999;
+background-size: cover;
+font-size: 25px;
+padding: 5px 0px;
+margin-left: 23px;
+}
+.contactDetails{
+color: rgba(245, 255, 245, 0.34);
+background: transparent;
+margin: 0px 10px;
+}
+#contactIcon{
+font-size: 22px;
+margin-left: 15px;
+margin-top: 20px;
+margin-right: 5px;
+display: inline-block;
+}
+.contactInfo{
+margin-top: 20px;
+margin-left: 0px;
+font-size: 20px;
+display: inline-block;
+}
+
+
+.meet{
+padding: 5px 0px;
+}
+.meetTitle{
+text-transform: uppercase;
+color: #109DFF;
+background: none;
+text-align: center;
+font-size: 25px;
+padding-top: 40px;
+}
+.meetBox{
+align-items: center;
+justify-align: center;
+text-align:center;
+font-size: 15px;
+padding: 40px 0px;
+}
+.meetBoxAddress{
+text-align: center;
+color: #999;
+font-size: 15px;
+line-height:25px;
+}
+.meetIcon{
+font-size:30px;
+color: #ccc;
+padding-bottom: 0px;
+
+
+}
+
+.viewBtn{
+text-transform: uppercase;
+width: 115px;
+height: 43px;
+margin: 0px;
+padding: 0px;
+color: #109DFF;
+font-size: 15px;
+background: transparent;
+border: none;
+outline: none;
+transition: all 0.5s;
+}
+.viewBtn:hover{
+color: #109DFF;
+border: 1px solid #ddd;
+}
+.viewBtn:active {
+color: #109DFF;
+border: 1px solid #ddd;
+}
+
+
+
+.footer{
+background: rgba(2, 4, 2, 0.7);
+text-align: center;
+padding: 15px 10px;
+
+}
+.SocialFooter a i{
+font-size: 15px;
+margin: 8px 2px;
+border: none;
+border-radius:50%;
+outline: none;
+background: none;
+color: rgba(255, 255, 255, 0.4);
+transition:  0.2s;
+}
+.SocialFooter a{
+border: none;
+border-radius:50%;
+outline: none;
+background: none;
+}
+.SocialFooter a i:active{
+border-radius:50%;
+outline: none;
+background: none;
+text-decoration:underline;
+}
+.SocialFooter a i:hover{
+border: none;
+background: none;
+text-decoration: underline;
+}
+.footerLink{
+font-size:15px;
+color: rgba(255, 255, 255, 0.4);
+padding: 0px 5px;
+border-left: 1px solid rgba(255, 255, 255, 0.4);
+text-decoration: none;
+}
+.exx{
+border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.footerLink:hover{
+text-decoration: underline;
+}
+.footerLink:active{
+text-decoration: underline;
+}
+.footerContent{
+padding: 4px 0px;
+color: rgba(255, 255, 255, 0.4);
+font-size:15px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+.col-3{
+float: left !important;
+width: 35%;
+display: inline-block;
+}
+.col-6{
+float: left !important;
+width: 50%;
+display: inline-block;
+}
+.col-9{
+float: left !important;
+width: 65%;
+display: inline-block;
+}
+.col-12{
+float: none !important;
+width: 100%;
+display: inline-block;
+}
+
+
+.skillDetails{
+box-sizing: border-box;
+border-left: 2px solid #ddd;
+.skillTitle{
+padding: 5px 0px;
+
+}
+
+
+
+
+
+}
+
+
+
+</style>
+</head>
+<body>
+<!--head start-->
+
+<!--title head start-->
+
+<div class="headBackground">
+
+<header id="header">
+
+<img src="images/logoh.png" class="Img">
+
+<div class="navigationBar" id="myNav">
+<button class="barsAfter"onclick="closeNav()">&times;</button>
+<nav>
+<a class="first_a" href="#" ><i class="fas fa-home"></i>Home</a>
+<a href="#ab" ><i class="fas fa-align-left"></i>About</a>
+<a href="#" ><i class="fab fa-buffer"></i>Services</a>
+<a class="last_a" href="#" ><i class="fas fa-headset"></i>Contact</a>
+</nav>
+</div>
+
+<button class="barsBefore" onclick="openNav()"><i class="fas fa-bars"></i>menu</button>
+
+
+</header>
+
+<!--head end-->
+<div class="introduce">
+
+<h1 class="introduceTitle"><span class="titleHi">Hi,</span> <br>I'm <span class="titleName">Hasan!</span></h1>
+
+<h3 class="bio">Student, Fan of Web Development<br>
+And also Design!</h3>
+
+<div id="Social">
+<a href="#" ><i class="fab fa-twitter"></i></a>
+<a href="#" ><i class="fab fa-facebook-f"></i></a>
+<a href="#" ><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+
+
+<!--title head end-->
+<!--About section start-->
+
+
+<div id="ab" class="aboutSection col-3">
+<h2 class="aboutTitle">Few Words <br>About Me</h2>
+
+<p class="aboutDetails">I'm a student. Besides 
+my study <br>I want to serves 
+people <br>my talent. I'm a fan
+ of <br>web development and 
+ design. <br>I learn web development 
+ course <br>from many organization.
+ <br>Now I have a 3 years + 
+ experience<br> about Web development, 
+ Design<br> and technology. If 
+ you want to work <br>with me, 
+ you can hire me.</p>
+ <button class="viewBtn">View more</button>
+</div>
+<!--about section end-->
+
+
+<div class="skillDetails col-9">
+<h2 class="skillTitle">My Skills</h2>
+
+
+<div class="skillBox">
+<span>HTML5</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+<div class="skillBox">
+<span>CSS3</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+<div class="skillBox">
+<span>JavaScript</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+<div class="skillBox">
+<span>jQuary</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+<div class="skillBox">
+<span>Bootstrap</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+<div class="skillBox">
+<span>mySQL</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+<div class="skillBox">
+<span>PHP</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+<div class="skillBox">
+<span>C++</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+
+<div class="skillBox">
+<span>WordPress</span><br>
+<!----------progress----->
+<div class="progress" id="progress">
+<div class="progressBar" id="progressBar">
+</div>
+</div>
+<!---progress----->
+<span>86%</span>
+</div>
+
+</div>
+<!--Skill Details end-->
+
+
+<!--work section start-->
+<div class="workSection col-12">
+
+<h2 class="workSectionTitle">What I Do</h2>
+
+<div class="boxContainer">
+<div class="boxLine">
+<!--box start-->
+<div class="box">
+<div class="boxIcon">
+<i class="fas fa-paint-brush"></i>
+</div>
+<div class="boxText">
+<h4 class="workTitle">Web Design</h4>
+<p class="workDetails">I do 
+Eye catching web design.</p>
+</div>
+</div>
+<!--box end-->
+<!--box start-->
+<div class="box">
+<div class="boxIcon">
+<i class="fas fa-laptop-code"></i>
+</div>
+<div class="boxText">
+<h4 class="workTitle">Web Development</h4>
+<p class="workDetails">Make 
+your site dynamic perfectly.</p>
+</div>
+</div>
+<!--box end-->
+<!--box start-->
+<div class="box">
+<div class="boxIcon">
+<i class="fab fa-wordpress"></i>
+</div>
+<div class="boxText">
+<h4 class="workTitle">WordPress</h4>
+<p class="workDetails"> Magento, E-Commerce, 
+Prestashop etc</p>
+</div>
+<!--box end-->
+</div>
+<div class="boxLine">
+<!--box start-->
+<div class="box">
+<div class="boxIcon">
+<i class="fas fa-pen-fancy"></i>
+</div>
+<div class="boxText">
+<h4 class="workTitle">Responsive Design</h4>
+<p class="workDetails">Make your
+website 100% responsive.</p>
+</div>
+</div>
+<!--box end-->
+<!--box start-->
+<div class="box">
+<div class="boxIcon">
+<i class="fab fa-searchengin"></i>
+</div>
+<div class="boxText">
+<h4 class="workTitle">Web Research</h4>
+<p class="workDetails">I do 
+cuticle work and research for your 
+website.</p>
+</div>
+</div>
+<!--box end-->
+<!--box start-->
+<div class="box">
+<div class="boxIcon">
+<i class="fas fa-search"></i>
+</div>
+<div class="boxText">
+<h4 class="workTitle">SEO</h4>
+<p class="workDetails">I do 
+Everything for your website 
+SEO.</p>
+</div>
+</div>
+<!--box end-->
+</div>
+</div>
+</div>
+
+</div>
+<!--work section end-->
+
+
+
+<div class="forExtra col-6">
+<!--work together start-->
+<div class="workWith">
+<h2 class="workWithTitle">Wanna work with me?</h2>
+<h4 class="workWithFind">Find me here</h4>
+<button type="button" class="hireButton">Hire Me</button>
+</div>
+<!--work together end-->
+<!--chose start-->
+<div class="chose">
+<h2 class="choseTitle">Whay do you chose me?</h2>
+<ul>
+<li>I'm a professional Web Developer</li>
+<li>I'm great expert about WordPress</li>
+<li>24/7 hours help my clients</li>
+<li>100% satisfaction</li>
+<li>Only take project that 
+I complete in time and on 
+profits</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<!--chose end-->
+<!--contact start-->
+
+<div class="contact col-6">
+
+<h2 class="contactTitle">Contact with Me</h2>
+
+<div class="contactDetails">
+<i id="contactIcon" class="fas fa-phone-square-alt"></i>
+<p class="contactInfo">+8801781497406</p>
+</div>
+
+
+<div class="contactDetails">
+<i id="contactIcon" class="fas fa-envelope-square"></i>
+<p class="contactInfo">hasanmilon237@gmail.com</p>
+</div>
+
+
+</div>
+<!--contact end-->
+
+<!--Meet strat-->
+<div class="meet col-6">
+<h2 class="meetTitle">Meet with me?</h2>
+<div class="meetBox">
+<div class="meetIcon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<p class="meetBoxAddress">Jadur char, 
+Rowmari<br> Kurigram 
+<br>Rangpur Bangladesh</p>
+<button class="viewBtn">View Map</button>
+</div>
+</div>
+<!--Meet end-->
+<!--Footer start-->
+<footer class="footer col-12">
+
+<!--subscribe start-->
+
+
+<div class="subscribeForm col-6">
+<h2 class="subscribeTitle">Get In Touch</h2>
+<input type="email" placeholder="Your E-mail Address" class="subscribeInput" required>
+<button class="subscribeButton">Subscribe</button>
+</div>
+<!--subscribe end-->
+
+<div class="SocialFooter">
+<a href="#" ><i class="fab fa-twitter"></i></a>
+<a href="#" ><i class="fab fa-facebook-f"></i></a>
+<a href="#" ><i class="fab fa-instagram"></i></a>
+<a href="#" ><i class="fab fa-whatsapp"></i></a>
+<a href="#" ><i class="fab fa-youtube"></i></a>
+</div>
+<p><a class="footerLink" href="" >Terms & Policy</a>
+<a class="footerLink exx" href="" >About</a></p>
+
+<p class="footerContent">&copy;Copyright All right reserved by Mohammed Hasan</p>
+
+</footer>
+<!--Footer end-->
+
+
+
+<script type="text/javascript">
+
+var get_header = document.getElementById('header');
+var get_sticky = get_header.offsetTop;
+var mynav = document.getElementById("myNav");
+
+
+window.onscroll = function (event){
+if(window.pageYOffset > get_sticky && event.target >= mynav){
+get_header.classList.add('sticky');
+mynav.style.width = "0%";
+
+}else{
+get_header.classList.remove('sticky');
+
+}
+};
+
+
+
+function openNav(){
+myNav.style.width = "70%";
+};
+function closeNav(){
+myNav.style.width = "0%";
+};
+
+
+window.onclick = function(event){
+if(event.target >= mynav){
+mynav.style.width = "0%";
+}else {}
+
+};
+
+
+
+
+</script>
+</body>
+</html>
