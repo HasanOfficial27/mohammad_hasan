@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lag="en">
 <head>
-<title>Personal Profile</title>
+<title>Mohammad Hasan</title>
 
-<script src="https://kit.fontawesome.com/3298b0c73b.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3298.js" crossorigin="anonymous"></script>
 
 
 <style type="text/css">
@@ -17,6 +17,7 @@ margin: 0px;
 padding: 0px;
 }
 #header{
+position: relative;
 margin: 0px;
 padding: 10px 0px;
 width: 100%;
@@ -41,7 +42,7 @@ border: none !important;
 
 }
 .barsBefore{
-
+position: absolute;
 font-size: 17px;
 padding: 10px 5px;
 color: #ccc;
@@ -56,7 +57,7 @@ border: none;
 margin: 5px;
 }
 .barsAfter {
-top: 0;
+position: absolute;
 right: 0%;
 font-size: 35px;
 float: none;
@@ -76,7 +77,7 @@ top: 0%;
 right: 0%;
 width: 0%;
 background: #109dff;
-display: block;
+display: none;
 color: #ccd;
 width: 0%;
 z-index: 1;
@@ -1050,17 +1051,21 @@ get_header.classList.remove('sticky');
 
 function openNav(){
 myNav.style.width = "70%";
+mynav.style.display = "block";
 };
 function closeNav(){
 myNav.style.width = "0%";
+mynav.style.display = "none";
 };
 
 /*
 window.onclick = function(event){
 if(event.target >= mynav){
 mynav.style.width = "0%";
-}else {
 mynav.style.display = "none";
+}else {
+mynav.style.width = true;
+mynav.style.display = true;
 }
 
 };
