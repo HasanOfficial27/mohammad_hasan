@@ -19,27 +19,28 @@ padding: 0px;
 position: relative;
 margin: 0px;
 padding: 10px 0px;
-width: 100%;
-height: 35px;
+
+height: 100px;
 background: none;
 border-bottom: 2px solid rgba(245, 224, 245, 0.34);
 }
 #header .Img{
 width: 68px;
 height: 34px;
-float: left;
-display: block;
+
+display: inline-block;
 background: transparent !important;
 }
 .sticky {
 position: fixed;
 z-index: 2;
 top: 0%;
-width: 100%;
+
 background-color: rgb(2, 4, 12) !important;
 border: none !important;
 
 }
+ /*
 .barsBefore{
 position: absolute;
 font-size: 17px;
@@ -103,37 +104,39 @@ border-top: 1px solid #ddd;;
 .navigationBar nav a i{
 margin: 3px;
 }
+ */
 
 .headBackground{
-padding-bottom: 5px;
-text-align: center;
+padding-bottom: 40px;
+text-align: justify;
 background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/me1.jpeg);
 background-size: cover;
 background-position: top;
 }
 
 .introduce{
-padding: 35px 0px;
+padding: 50px 0px;
 
 }
 
 .titleHi{
+font-size: 40px;
 color: rgba(255, 255, 255, 0.67);
 }
 .introduceTitle{
 font-family: arial black;
-font-size: 45px;
+font-size: 50px;
 font-weight: bold;
 color: orange;
 }
 .titleName{
-font-size: 60px;
+font-size: 70px;
 color: #109DFF;
 }
 .bio{
-margin-top:5px;
-margin-bottom:0px;
-font-size: 20px;
+margin-top:15px;
+margin-bottom:10px;
+font-size: 30px;
 align-items: center;
 justify-align: center;
 text-align: center;
@@ -148,9 +151,9 @@ margin-top: 25px;
 margin-bottom: 0px;
 }
 #Social a i{
-width: 18px;
-height: 18px;
-font-size:20px;
+width: 30px;
+height: 30px;
+font-size:25px;
 margin: 4px;
 padding: 12px;
 border: 1px solid #109DFF;
@@ -161,8 +164,8 @@ color: #109DFF;
 transition:  0.2s;
 }
 #Social a{
-width: 18px;
-height: 18px;
+width: 30px;
+height: 30px;
 border: none;
 border-radius:50%;
 outline: none;
@@ -171,7 +174,7 @@ background: none;
 #Social a i:active{
 border: none;
 background: #109DFF;
-color: white;
+color: #fff;
 border-radius:50%;
 outline: none;
 }
@@ -183,7 +186,7 @@ color: #dee;
 
 
 .aboutSection{
-padding-top: 40px;
+padding-top: 50px;
 padding-bottom: 50px;
 text-align: center;
 font-family: arial;
@@ -193,7 +196,7 @@ line-height:23px;
 text-transform: uppercase;
 color: #109DFF;
 padding: 25px 5px;
-font-size: 30px;
+font-size: 50px;
 line-height: 30px;
 }
 .aboutSection .aboutDetails{
@@ -208,16 +211,16 @@ line-height: 25px;
 
 
 .workSection{
-padding: 40px 0px;
+padding: 50px 0px;
 background: linear-gradient(rgba(0, 0, 0, 0.67),rgba(0, 0, 0, 0.67)),url(images/images8.jpeg);
 background-size: cover;
 background-position: center;
 }
 .workSectionTitle{
 text-transform: uppercase;
-color: white;
+color: #fff;
 padding: 30px 5px;
-font-size: 30px;
+font-size: 50px;
 text-align: center;
 line-height: 30px;
 }
@@ -231,18 +234,18 @@ text-align: center;
 margin: auto;
 }
 .box{
-width: 180px;
-height: 105px;
+width: 280px;
+height: 150px;
 padding: 7px;
 margin: 12px;
 transition: all 0.5s;
 }
 .box:hover{
-transform: translateX(7px);
+transform: translateX(10px);
 box-shadow: 1px 0px 1px #ddd;
 }
 .box:hover .workTitle{
-transform: translateX(-8px);
+transform: translateX(-11px);
 }
 .box .boxIcon{
 width: 25%;
@@ -258,7 +261,7 @@ float: right;
 margin: 5px 0px;
 }
 .workTitle{
-color: white;
+color: #fff;
 font-size: 17px;
 padding-bottom: 3px;
 transition: all 0.5s;
@@ -423,7 +426,7 @@ color: #fff;
 text-align: left;
 font-size: 18px;
 margin-top: 8px;
-margin-left: 40px;
+margin-left: 150px;
 padding-bottom: 10px;
 }
 .subscribeInput{
@@ -431,7 +434,7 @@ width: 50%;
 height: 40px;
 margin:5px;
 padding: 5px;
-color: white;
+color: #fff;
 font-size: 14px;
 background: transparent;
 border: 1px solid #ddd;
@@ -439,7 +442,7 @@ outline: none;
 box-sizing: border-box;
 }
 .subscribeInput::placeholder {
-color: white;
+color: #fff;
 opacity: 0.7;
 }
 .subscribeInput:hover{
@@ -453,7 +456,7 @@ width: 90px;
 height: 40px;
 margin: 5px;
 padding: 5px;
-color: white;
+color: #fff;
 font-size: 14px;
 font-weight: bold;
 background: #109DFF;
@@ -683,6 +686,7 @@ padding: 5px 0px;
 <img src="images/logoh.png" class="Img">
 
 <div class="navigationBar" id="myNav">
+/*
 <button class="barsAfter"onclick="closeNav()">&times;</button>
 <nav>
 <a class="first_a" href="#" ><i class="fas fa-home"></i>Home</a>
@@ -690,9 +694,10 @@ padding: 5px 0px;
 <a href="#" ><i class="fab fa-buffer"></i>Services</a>
 <a class="last_a" href="#" ><i class="fas fa-headset"></i>Contact</a>
 </nav>
+*/
 </div>
 
-<button class="barsBefore" onclick="openNav()"><i class="fas fa-bars"></i>menu</button>
+
 
 
 </header>
