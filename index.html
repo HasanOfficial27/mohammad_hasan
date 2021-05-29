@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home: Mohamed Hasan</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Open+Sans&family=Oswald:wght@300&family=Raleway:ital,wght@1,200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $('.counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 8000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+  
+});
+
+  
+});
+
+
+</script>
+
+<script src="jquery.countup.js"></script>
+
+
+
+<style type="text/css">
+				
+body{
+margin: 0px;
+padding: 0px;	
+font-size: 100%;		
+}														
+.containerHasan{
+padding: 100px 0px;		
+margin: 0px 80px;
+}
+.subContainer{
+padding: 0px 80px;						
+}				
+#header{
+				
+}
+.headerDiv{
+height: 170px;
+padding: 10px;
+background: #109dff;		
+display: block;
+}
+.headerLogo{
+width: 250px;
+height: 170px;
+display: inline-block;
+margin-left: 50px;
+}
+.mainLogo{
+width:100%;
+height:100%;
+}
+.btnPicContainer{
+width: 140px;
+height: 140px;			
+border: 10px solid #ddd;
+border-radius: 50%;
+overflow: hidden;
+float: right;
+margin-top: 8px;
+margin-right: 50px;
+background: none;
+}
+.btnPic{
+width: 100%;
+height: 100%;	
+overflow: hidden;			
+}
+.profileSection{
+position: relative;
+}
+.sliderContainer{
+width: 100%;	
+height: 870px;
+position: relative;							
+}
+.mySlides{
+width: 100%;
+height: 100%;
+position: absolute;						
+}
+.slideFade{
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;				
+}
+@-webkit-keyframes fade {
+			from{opacity: 0.4}
+			to{opacity: 1}
+}
+@keyframes fade {
+			from{opacity: 0.4}
+			to{opacity: 1}
+}
+.profileContainer{
+background: linear-gradient(75deg,rgba(12,12,12,0.35),rgba(12,12,12,0.55),rgba(12,12,12,0.95),rgba(12,12,12,0.999));
+z-index: 1;
+height: 870px;
+position: absolute;
+top: 190px;			
+}
+.proContentCon{
+padding: 100px 0px;		
+margin: 0px 80px;								
+}
+.bigProfileName{
+font-family: 'Lato', sans-serif;				
+font-size: 6.5em;				
+text-transform: uppercase;
+text-align: right;
+margin-bottom: 50px;
+color: #109dff;
+font-weight: bold;
+}
+.bigProfileDetails{	
+font-size: 1em;						
+text-align: right;			
+color: rgba(255,253,250,0.45);			
+font-family: 'Roboto', sans-serif;	
+}
+.profileBtnContainer{
+width: 100%;
+margin-top: 50px;
+clear: both;
+display: table;
+}
+.profileBtn{
+width: 260px;
+height: 125px;
+margin-top: 30px;
+background: #eee;
+float: right;
+border-radius: 16px;
+border: none;
+text-align: center;
+font-size: 3em;
+font-family: arial black;
+font-weight: bold;	
+color: #109dff;
+outline: none;
+transition: linear 0.5s;
+}
+.profileBtn:hover{
+background: #109dff;
+color: #eee;
+border-radius: 18px;			
+}
+#aboutSection{
+background: linear-gradient(50deg,rgba(255,255,255,0.6),rgba(255,255,255,0.5)),url(bg3.jpg);	
+background-repeat: no-repeat;			
+background-position: center;
+}
+.title{
+font-size: 4.7em;	
+margin-bottom: 0px;
+padding: 30px;
+text-transform: uppercase;
+font-family: 'Open sans',sans-serif;
+font-weight: bold;
+text-align: center;
+border-radius: 50%;
+border-bottom: 4px solid rgba(34,137,233,0.6);	
+color: #109dff;
+}
+.aboutDetails{
+font-size: 1em;
+font-family: 'Open sans',sans-serif;
+text-align: center;
+color: rgba(34,36,33,0.45);
+padding-top: 80px;
+}
+.endName{
+font-size: 1em;
+font-family: 'Open sans',sans-serif;
+text-align: right;			
+color: rgba(34,36,33,0.45);				
+}
+.clientReviewCon{
+margin-top: 120px;	
+}
+.review{
+width: 100%;
+margin: 30px 0px;
+padding: 15px 0px;
+overflow: hidden;	
+background: rgba(223,222,223,0.2);
+}
+.rightSide{
+float: right;				
+}
+.reviewContentCon{
+width: 62%;
+height: 99%;
+display: inline-block;
+text-align: center;	
+}
+.reviewContent{
+margin: 50px 0px;		
+padding: 0px 40px;		
+font-size: 1em;
+font-family: 'Lato',sans-serif;
+text-align: center;
+color: rgba(34,36,33,0.45);
+border-right: 3px solid rgba(254,196,53,0.75);			
+z-index: -1;	
+}
+.reviewContentLast{
+border-right: none;
+border-left: 3px solid rgba(254,196,53,0.75);							
+}
+.highPen{
+font-size: 1.5em;
+color: rgba(254,196,53,0.75);				
+}
+.reviewProfileCon{
+width: 34%;
+height: 100%;
+display: inline-block;
+text-align: center;	
+margin: 0px 15px;	
+padding: 15px 0px;
+z-index: 1;
+}
+.clientProPic{
+width: 100px;			
+height: 100px;
+border: 5px solid #109dff;
+border-radius: 50%;
+margin-bottom: -25px;
+}
+.clientName{
+font-size: 2.4em;
+font-weight: bold;
+color: rgba(32,30,31,0.55);
+text-transform: capitalize;		
+margin-bottom: -7px;						
+}
+.clientTitle{
+font-size: 1em;
+font-family: 'Open sans',sans-serif;		
+color: rgba(34,36,33,0.45);	
+text-transform: capitalize;					
+}
+.clientCompany{
+font-size: 1.11em;	
+text-transform: capitalize;			
+color: rgba(32,30,31,0.45);
+}
+#workSection{
+padding: 100px 0px;
+}
+.whatTitleCon{
+width: 73%;
+padding: 0px 80px;	
+margin-bottom: 100px !important;		
+background: #109dff;
+border-radius: 0px 0px 60px 0px;
+}
+.whatTitle{
+padding: 30px 0px;
+font-size: 4.7em;	
+text-transform: uppercase;
+font-family: 'Open sans',sans-serif;
+font-weight: bold;
+text-align: center;	
+color: #fff;				
+}
+.workContainer{
+margin: 80px 0px;
+padding: 60px 0px;
+background-size: cover;		
+background-position: center;
+background-repeat: no-repeat;		
+}
+.frstLttr{
+transition: all 0.4s linear;				
+}
+.workContainer:hover .frstLttr{
+color: #109dff;								
+}
+.designCon{
+background-image: linear-gradient(0deg,rgba(255,255,255,0.80),rgba(255,255,255,0.80)), url(design.jpeg);		
+transition: all 0.5s;
+}
+.workTitle{
+font-size: 3.15em;
+font-family: 'Open sans',sans-serif;		
+text-align: center;
+padding: 25px 0px;
+margin: 10px;
+text-transform: capitalize;
+color: rgba(32,30,31,0.55);
+}
+.workDetails{
+font-size: 1em;
+font-family: 'Open sans',sans-serif;	
+text-align: center;
+color: rgba(32,30,31,0.55);		
+padding-bottom: 70px;		
+}
+.developmentCon {
+background-image: linear-gradient(0deg,rgba(255,255,255,0.80),rgba(255,255,255,0.80)), url(development.jpeg);
+transition: all 0.5s;				
+}
+.wordpressCon{
+background-image: linear-gradient(0deg,rgba(255,255,255,0.80),rgba(255,255,255,0.80)), url(wordpress.jpeg);
+transition: all 0.5s;
+}
+.seoCon{
+background-image: linear-gradient(0deg,rgba(255,255,255,0.80),rgba(255,255,255,0.80)), url(seo.jpg);
+transition: all 0.5s;
+}				
+.helpCon{
+background-image: linear-gradient(0deg,rgba(255,255,255,0.80),rgba(255,255,255,0.80)), url(service.png);
+transition: all 0.5s;
+}				
+#journeySection{
+padding: 100px 0px;
+background: linear-gradient(50deg,rgba(255,255,255,0.6),rgba(255,255,255,0.65)),url(bg4.jpg);	
+background-size: cover;
+background-repeat: no-repeat;			
+background-position: top;
+}
+.journeyBigContainer{
+padding: 70px 0px;
+}
+.journeyContainer{
+width: 75%;
+margin: 30px auto;
+padding: 40px 0px;
+border-radius: 60px 0px 60px 0px;
+background: #182657;
+}
+.journeyTitle{
+text-align: center;
+font-size: 3.7em;
+font-weight: bold;
+font-family: 'Open sans',sans-serif;
+padding: 0px;
+margin: 25px;
+color: rgba(250,254,253,0.5);
+text-transform: capitalize;
+}
+.counter{
+margin: auto;
+text-align: center;
+font-size: 3em;
+background-color: transparent;
+color: rgba(250,254,253,0.5);
+vertical-align: middle;
+}
+
+
+</style>				
+</head>
+<body>
+<!------header start------>	
+<header id="header">			
+<div class="headerDiv">
+				
+<div class="headerLogo">
+ <img class="mainLogo" src="logo.png" alt="Logo">
+</div>
+				
+<div class="btnPicContainer">
+<img class="btnPic" src="profile.jpg" alt="?">				
+</div>
+
+</div>
+</header>	
+<!------header end------>
+<!------profile start------>
+<div class="profileSection">
+			
+<div class="sliderContainer">			
+<div class="mySlides slideFade">
+<img src="slide1.jpg"style="width: 100%;height: 100%">
+</div>		
+<div class="mySlides slideFade">
+<img src="slide2.jpg"style="width: 100%;height: 100%">
+</div>		
+<div class="mySlides slideFade">
+<img src="slide3.jpg"style="width: 100%;height: 100%">
+</div>						
+</div>
+
+</div>			
+			
+<div class="profileContainer">
+<div class="proContentCon">
+<h1 class="bigProfileName">Mohammad Hasan</h1>
+<h5 class="bigProfileDetails">He is a professional skilled Web Designer.<br> Also as an absolute<br> Web Developer he is the best!<br>If you have any questions please<br> feel free to contact him at any time!</h5>									
+<div class="profileBtnContainer"data-aos="fade-left">		
+<button class="profileBtn">What's up!</button>		
+</div>							
+</div>			
+</div>
+<!------profile end------>
+<!--------About start-------->
+<section id="aboutSection">
+<div class="containerHasan">
+<h2 class="title">About me</h2>
+
+<p class="aboutDetails">Hey there, I'm Mohammad Hasan. Besides my study I do professional Web Design and Development. I have three years of experience about my great job. There are lots of clients of mine who are satisfied to my work. I have been working in the online marketplace since three years with the great passion. <br>I am fluent in English which is most important to our communication system. I love to do Design and creativity. I try to help my client every time every moment when they need. It's my honor to help them. <br>If you need any type of help about Web Design and development please feel free to contact me. Thank you!</p>
+<p class="endName"data-aos="slide-right">-Mohammad Hasan</p>				
+
+<div class="clientReviewCon">
+
+<div class="review">
+
+<div class="reviewContentCon">
+<p class="reviewContent"data-aos="slide-left"><span class="highPen">“</span>A book by its self and I will be there at that time in the morning do you have a book by Lorem imsum dollar sitok by the time I got home and happy holidays and happy holidays to you and your destiny and happy holidays to love your Parents you are the best thing that has ever happened.<span class="highPen">”</span></p>						
+</div>
+<div class="reviewProfileCon rightSide">
+
+<img class="clientProPic"src="client1.jpeg"alt="Client">
+<p class="clientName">Fahim taleah</p><br>
+<b class="clientTitle">M Director</b><br>
+<b class="clientCompany">RNAR's Softwares Tech</b>
+				
+</div>
+</div>
+
+<div class="review">
+				
+<div class="reviewContentCon rightSide">
+<p class="reviewContent reviewContentLast"data-aos="slide-right"><span class="highPen">“</span>A book by its self and I will be there at that time in the morning do you have absolutely right I Love You feel like I have to see if I could get a copy by the time I got home and happy holidays and happy holidays to you and your destiny and happy holidays to love your Parents you are the best thing that has ever happened.<span class="highPen">”</span></p>										
+</div>	
+<div class="reviewProfileCon">
+<img class="clientProPic"src="client2.jpeg"alt="Client">
+<p class="clientName">Sheras javed</p><br>
+<b class="clientTitle">CEO</b><br>
+<b class="clientCompany">FN's Softwares Company</b>				
+</div>	
+</div>
+
+</div>
+
+</div>
+</section>
+<!--------About end-------->
+<!--------Work start-------->
+<section id="workSection">
+				
+<div class="whatTitleCon"data-aos="slide-right">
+<h2 class="whatTitle" data-aos="fade-left">What I do</h2>			
+</div>
+
+<div class="workContainer designCon"data-aos="flip-right">				
+<h3 class="workTitle">web <span class="frstLttr">de</span>sign</h3>
+<p class="workDetails">Font compilation, color <br>combination based Design which <br>catch visitors eyes!</p>			
+</div>
+<div class="workContainer developmentCon"data-aos="fade-right">				
+<h3 class="workTitle">web <span class="frstLttr">de</span>velopment</h3>
+<p class="workDetails">Coding solution, fundamental <br>algorithm system makes your <br>Web Site dynamic!</p>			
+</div>
+<div class="workContainer wordpressCon"data-aos="flip-right">				
+<h3 class="workTitle">Theme <span class="frstLttr">cu</span>stomization</h3>
+<p class="workDetails">Wordpress plugin and <br>theme customization. e-Commerce <br>web site using theme plugin.</p>			
+</div>
+<div class="workContainer seoCon"data-aos="fade-right">				
+<h3 class="workTitle">S<span class="frstLttr">E</span>O</h3>
+<p class="workDetails">Search engine optimization!<br> Bost website to increase visitors.<br> Promote your business.</p>			
+</div>
+<div class="workContainer helpCon"data-aos="flip-right">				
+<h3 class="workTitle"><sup>24</sup>/<sub>7</sub><span class="frstLttr">Ho</span>urs service</h3>
+<p class="workDetails">Get Emergency services!<br><sup>24</sup>/<sub>7</sub> hours service and unlimited help.<br> It's my honor.</p>			
+</div>
+
+</section>
+<!--------Work end-------->
+<!-------success section---->
+<section id="journeySection"data-aos="slide-down">
+<div class="subContainer">
+<h2 class="title">My journey</h2>
+</div>
+
+<div class="journeyBigContainer">
+<div class="journeyContainer"data-aos="slide-right">
+<h3 class="journeyTitle">happy client</h3>
+<h4 class="counter"data-count="539">0</h4>
+</div>
+<div class="journeyContainer"data-aos="fade-left">
+<h3 class="journeyTitle">sleepless nights</h3>
+<h4 class="counter"data-count="1065">0</h4>
+</div>
+<div class="journeyContainer"data-aos="slide-right">
+<h3 class="journeyTitle">cup of coffee</h3>
+<h4 class="counter"data-count="2139">0</h4>
+</div>
+</div>
+
+</section>
+
+
+<script>
+				
+var slideIndex= 0;
+showSlides();
+
+function showSlides() {
+				
+var i;
+var slides = document.getElementsByClassName("mySlides");
+
+for(i = 0; i < slides.length; i++){
+
+slides[i].style.display = "none";
+}
+slideIndex++;
+
+if(slideIndex > slides.length){
+
+slideIndex=1
+}
+
+slides[slideIndex-1].style.display = "block";
+
+setTimeout(showSlides, 2500);
+};
+
+
+</script>
+			
+<!---------------------
+<script src="/path/to/jquery.min.js">
+</script>
+<script src="/path/to/jquery.waypoints.min.js"></script>			
+<!-------------AOS------------------>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+    				duration: 1100,
+});
+  </script>
+  
+  
+</body>
+</html>
